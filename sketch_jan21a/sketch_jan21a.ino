@@ -5,11 +5,11 @@ void setup() {
   timestoblink = timestoblink + 3 * 4;  // now timestoblink = 13
 }
 
-void loop() {
-  if (timestoblink > 4) {
-    digitalWrite(LED_BUILTIN, HIGH);
-    delay(1000);
-    digitalWrite(LED_BUILTIN, LOW);
+void loop() { 
+  for (int i = 0; i < timestoblink; i++) {
+    digitalWrite(LED_BUILTIN, HIGH); 
+    delay(1000); 
+    digitalWrite(LED_BUILTIN, LOW); 
     delay(1000);
   }
 }
