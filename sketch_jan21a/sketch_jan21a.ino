@@ -6,10 +6,11 @@ void setup() {
 }
 
 void loop() { 
-  for (int i = 0; i < timestoblink; i++) {
+ while (timestoblink > 4) {
     digitalWrite(LED_BUILTIN, HIGH); 
     delay(1000); 
     digitalWrite(LED_BUILTIN, LOW); 
     delay(1000);
   }
+
 }
